@@ -17,4 +17,5 @@ class Discussion(models.Model):
 
 class Comment(models.Model):
     discussion = models.ForeignKey(Discussion, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     text = models.TextField()
