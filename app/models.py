@@ -1,7 +1,7 @@
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
 
-__all__ = ['User', 'Tag', 'Discussion', 'Comment']
+__all__ = ['Forum', 'User', 'Tag', 'Discussion', 'Comment']
 
 
 class Tag(models.Model):
